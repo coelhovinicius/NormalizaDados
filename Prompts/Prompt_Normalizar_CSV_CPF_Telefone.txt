@@ -1,0 +1,19 @@
+Transformação de Dados CSV
+
+Tenho uma tabela em csv com 100 linhas e 5 colunas. Tenho as colunas:
+
+nome, email, cpf_cnpj, phone, slug plan
+
+As colunas nome, email e slug_plan estão com os dados consistentes.
+As colunas cpf_cnpj e phone não têm consistência nos dados:
+	- A coluna cpf_cnpj pode estar aparecendo no formato 000.000.000-00 e também no formato 00000000000;
+	- A coluna phone pode estar aparecendo no formato (00) 00000-0000, 00000000000, 0000000000, (00)00000-0000, (00)0000-0000.
+Preciso transformar o seguinte:
+	- Os dados da coluna cpf_cnpj devem ficar, todos, no formato 000.000.000-00;
+	- Os dados da coluna phone devem ficar, ou no formato +00 (00) 00000-0000, ou no formato +00 (00) 00000-0000.
+
+Indique-me o passo a passo de como fazer um código para tratar esses dados. Deve ser um código que leia o meu arquivo CSV, percorra todas as linhas e faça as alterações necessárias nas colunas cpf_cnpj e phone, para que esses dados fiquem da maneira que eu indiquei.
+
+Pode ser uma aplicação em Python. 
+
+Uso o VS Code. 

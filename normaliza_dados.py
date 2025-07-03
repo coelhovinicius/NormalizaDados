@@ -45,5 +45,6 @@ def main():
 
     print(f'Transformação concluída e salva em "{ARQUIVO_NOVO}"')
 
+
 if __name__ == "__main__":
     main()
